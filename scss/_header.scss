@@ -4,21 +4,20 @@
 #header {
     @include vertical-center;
     justify-content: space-between;
-    padding: $space-1 $space-2;
+    padding: $space-2 $space-3;
 
-    // Light Mode
-    &.light {
-        @include box-shadow(rgba(133,133,133,0.75));
-        background-color: $white;
-
-        .header_title, .header_btn{
-            color: $lightModeText;
-        }
+    @media screen and (max-width: $lg) {
+        padding: $space-2 $space-1;
     }
+
 
     .header_title {
         font-weight: $bold;
         margin: 0;
+
+        @media screen and (max-width: $lg) {
+            font-size: 1rem;
+        }
     }
 
     .header_btn {
@@ -31,5 +30,19 @@
         padding: .75rem;
         font-size: 1.25rem;
         font-weight: $normal;
+
+        @media screen and (max-width: $lg) {
+            font-size: .75rem;
+        }
+    }
+
+    // Light Mode
+    &.light {
+        @include box-shadow(rgba(220, 216, 216, 0.75));
+        background-color: $white;
+
+        .header_title, .header_btn{
+            color: $lightModeText;
+        }
     }
 }

@@ -1,6 +1,6 @@
 // Layout
-$mobileBp: 375px;
-$desktopBp: 1440px;
+$sm: 375px;
+$lg: 992px;
 
 // Colors
 $darkBlue: rgb(43, 57, 69);
@@ -16,5 +16,6 @@ $semiBold: 600;
 $bold: 800;
 
 //Spacing
-$space-1: 2rem;
-$space-2: 7rem;
+$space-1: 1rem;
+$space-2: 2rem;
+$space-3: 7rem;
