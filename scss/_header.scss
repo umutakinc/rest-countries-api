@@ -1,0 +1,35 @@
+@import 'mixins';
+
+// Header
+#header {
+    @include vertical-center;
+    justify-content: space-between;
+    padding: $space-1 $space-2;
+
+    // Light Mode
+    &.light {
+        @include box-shadow(rgba(133,133,133,0.75));
+        background-color: $white;
+
+        .header_title, .header_btn{
+            color: $lightModeText;
+        }
+    }
+
+    .header_title {
+        font-weight: $bold;
+        margin: 0;
+    }
+
+    .header_btn {
+        @include vertical-center;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        gap: .25rem;
+        padding: .75rem;
+        font-size: 1.25rem;
+        font-weight: $normal;
+    }
+}

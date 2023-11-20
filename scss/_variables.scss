@@ -4,8 +4,8 @@ $desktopBp: 1440px;
 
 // Colors
 $darkBlue: rgb(43, 57, 69);
-$darkModeBlue: rgb(32, 44, 55);
-$lightModeBlue: rgb(17, 21, 23);
+$darkModeText: rgb(32, 44, 55);
+$lightModeText: rgb(17, 21, 23);
 $darkGray: rgb(133, 133, 133);
 $lightGray: rgb(250, 250, 250);
 $white: rgb(255, 255, 255);
@@ -14,3 +14,7 @@ $white: rgb(255, 255, 255);
 $normal: 300;
 $semiBold: 600;
 $bold: 800;
+
+//Spacing
+$space-1: 2rem;
+$space-2: 7rem;
