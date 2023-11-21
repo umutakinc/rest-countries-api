@@ -1,2 +1,7 @@
-@import 'root', 'variables', 'header';
+@import 'root', 'variables', 'header', 'form';
 
+body {
+    &.light {
+        background-color: $lightGray;
+    }
+}

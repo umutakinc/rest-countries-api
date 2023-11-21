@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +8,13 @@ body {
 }
 
 .container {
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: $space-3;
+    margin-right: $space-3;
+    padding-bottom: $space-2;
+    padding-top: $space-2;
+
+    @media screen and (max-width: $lg) {
+        margin-left: $space-1;
+        margin-right: $space-1;
+    }
 }

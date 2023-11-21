@@ -1,7 +1,13 @@
-@mixin box-shadow($shadow-color) {
+@mixin box-shadow-bottom($shadow-color) {
     box-shadow: 0px 7px 18px -2px $shadow-color;
     -webkit-box-shadow: 0px 7px 18px -2px $shadow-color;
     -moz-box-shadow: 0px 7px 18px -2px $shadow-color;
+}
+
+@mixin box-shadow($shadow-color) {
+    box-shadow: 0px 0px 10px 0px $shadow-color;
+    -webkit-box-shadow: 0px 0px 10px 0px $shadow-color;
+    -moz-box-shadow: 0px 0px 10px 0px $shadow-color;
 }
 
 @mixin vertical-center {

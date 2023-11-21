@@ -38,7 +38,7 @@
 
     // Light Mode
     &.light {
-        @include box-shadow(rgba(220, 216, 216, 0.75));
+        @include box-shadow-bottom(rgba(220, 216, 216, 0.75));
         background-color: $white;
 
         .header_title, .header_btn{
